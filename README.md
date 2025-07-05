@@ -63,14 +63,28 @@ This project demonstrates a complete on-premise data engineering pipeline design
 
 ### 4. Orchestration
 - Managed using Airflow:
-  - `weather_to_kafka_dag.py`
-  - `batch_etl_dag.py`
+   - `weather_to_kafka_dag.py`
+   - `batch_etl_dag.py`
 
 ### 5. Monitoring
 - Prometheus scrapes metrics.
 - Grafana visualizes health of Kafka, Spark, Airflow, etc.
 
 ---
+### 6. Setup & Execution
+- Prerequisites
+   - Python 3.x
+   - Apache Kafka
+   - Apache Spark
+   - Apache Hive
+   - MySQL
+   - Apache Airflow
+   - Docker (Optional)
+
+### 7. Sample Output
+- Parquet files stored in /data/parquet/
+- Hive table: default.final_table
+- MySQL table: final_weather_data
 
 ## 📁 Project Structure
 ```bash
@@ -101,54 +115,3 @@ onprem-data-pipeline-yourname/
 │   └── weather_pipeline_dashboard.json
 │
 └── README.md
-
-
-Setup & Execution
-⚙️ Prerequisites
-Python 3.x
-
-Apache Kafka
-
-Apache Spark
-
-Apache Hive
-
-MySQL
-
-Apache Airflow
-
-Docker (Optional)
-
-🔧 Step-by-Step Setup
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/onprem-data-pipeline-yourname.git
-cd onprem-data-pipeline-yourname
-Install dependencies (if required):
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Start Kafka, Hive, MySQL (use Docker Compose or manual setup).
-
-Trigger Airflow DAGs from the UI or CLI:
-
-weather_to_kafka_dag.py
-
-batch_etl_dag.py
-
-Open Grafana dashboard for monitoring:
-
-Import grafana_dashboards/weather_pipeline_dashboard.json
-
-📊 Sample Output
-✅ Parquet files stored in /data/parquet/
-
-✅ Hive table: default.final_table
-
-✅ MySQL table: final_weather_data
-
