@@ -66,7 +66,7 @@ This project demonstrates a complete on-premise data engineering pipeline design
 - Grafana visualizes health of Kafka, Spark, Airflow, etc.
 
 ---
-### 6. Setup & Execution
+## ✅ Setup & Execution
 - Prerequisites
    - Python 3.x
    - Apache Kafka
@@ -76,7 +76,7 @@ This project demonstrates a complete on-premise data engineering pipeline design
    - Apache Airflow
    - Docker (Optional)
 
-### 7. Sample Output
+## 📊 Sample Output
 - Parquet files stored in /data/parquet/
 - Hive table: default.final_table
 - MySQL table: final_weather_data
