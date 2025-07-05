@@ -28,11 +28,6 @@ This project demonstrates a complete on-premise data engineering pipeline design
 
 ---
 
-## 🧬 Architecture Diagram
-![Pipeline Architecture](./images/pipeline_architecture_dark.png) <!-- Adjust image path accordingly -->
-
----
-
 ## 📥 Data Sources
 1. **OpenWeatherMap API**  
    Real-time weather metrics: temperature, humidity, wind, etc.
@@ -85,6 +80,8 @@ This project demonstrates a complete on-premise data engineering pipeline design
 - Parquet files stored in /data/parquet/
 - Hive table: default.final_table
 - MySQL table: final_weather_data
+
+---
 
 ## 📁 Project Structure
 ```bash
